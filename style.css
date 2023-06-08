@@ -1,0 +1,226 @@
+ @font-face {
+    font-family: "STUFE";
+    src: url("/Font/Epilogue-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "FRAGE";
+    src: url("/Font/Epilogue-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "ANTWORT";
+    src: url("/Font/Epilogue-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "TEXT";
+    src: url("/Font/IBMPlexSerif-Italic.woff2") format("woff2");
+
+}
+
+ 
+     
+     
+     
+     body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .akkordeon {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    font-family: "THIN";
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    
+
+  }
+
+  
+  .akkordeon .sektion {
+    position: relative;
+    height: 8vh;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+  }
+
+  .akkordeon .sektion:nth-child(1) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #5e8eaa, #2d4e64)
+  }
+  
+  .akkordeon .sektion:nth-child(2) {
+    background-color: ;
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #7a9dac, #3d5763)
+  }
+  
+  .akkordeon .sektion:nth-child(3) {
+    background-color:;
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #96acae, #4f6063)
+  }
+  
+  .akkordeon .sektion:nth-child(4) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #b1b9b2, #626a63)
+    
+  }
+  
+  .akkordeon .sektion:nth-child(5) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #c4c2b4, #757363)
+  }
+  
+  .akkordeon .sektion:nth-child(6) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #d5ccb5, #887c63);
+  }
+  
+  .akkordeon .sektion:nth-child(7) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #e2d4b8, #9c8563);
+  }
+  
+  .akkordeon .sektion:nth-child(8) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #ecdcbb, #b08f64);
+  }
+  
+  .akkordeon .sektion:nth-child(9) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #f3e3bf, #c49865);
+  }
+  
+  .akkordeon .sektion:nth-child(10) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #f8e8c1, #d7a265);
+  }
+  
+  .akkordeon .sektion:nth-child(11) {
+    border-radius: 80vw 80vw 0vw 0vw;
+    background-image: linear-gradient(to top, #fbedc5, #ebab67);
+  }
+
+  .akkordeon .sektion.aktiv {
+    height: calc(100vh - 8vh);
+    margin-top: calc(-8vh * var(--index));
+    margin-bottom: 0;
+  }
+
+  .akkordeon .sektion.aktiv:last-child {
+    height: 100vh !important;
+  }
+
+  .akkordeon .inhalt {
+    display: none;
+    padding: 10px;
+    
+  }
+
+  .akkordeon .sektion.aktiv .inhalt {
+    display: block;
+  }
+
+  .inhalt {
+    
+
+  }
+
+
+  h1{
+    color: white;
+    font-family: "FRAGE";
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+h2{
+    color: magenta;
+    font-family: "ANTWORT";
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+h3{
+  color: white;
+  font-family: "STUFE";
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0;
+  padding: 1.2vh; 
+  opacity: 0.8;
+}
+
+
+.diaryText{
+    font-family: "TEXT";
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.textarea {
+  background-color: transparent;
+  color: white;
+  padding: 1em;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: "ANTWORT";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.4;
+  width: 300px;
+  height: 100px;
+  transition: all 0.2s;
+  resize: none;
+  overflow: auto;
+  border-color: white;
+  border
+}
+
+.textarea.small {
+  height: 10px;
+}
+
+
+
+.textarea:focus {
+  
+  background-color: rgb(0,0,0);opacity:0.2;
+
+}
+
+
+.scroll-box {
+    background: #f4f4f4;
+    height: 400px; /* maximum height of the box, feel free to change this! */
+    margin: 120px 15px 15px 15px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.Bild{
+  width: 50vw;
+  mix-blend-mode: multiply;
+  filter: brightness(1.2);
+}
+
+
+
+
+
+
+
