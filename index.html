@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="accordeon.js"></script>
+  <script type="module" src="api.js"></script>
+
+  <title>Lacuna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+</head>
+<body>
+
+
+
+
+  <img src="/Font/Logo_brain.svg" alt="Bild 1" class="Logo">
+  
+
+
+
+
+    
+  
+    
+  <div class = "title">Lacuna, Inc.</div>
+    <div class = "titleText">Verwandle deine schmerzhaften Erinnerungen <br>
+      in erfüllende Erfahrungen</div>
+   
+      
+    
+    
+    
+      <div class="akkordeon">
+      
+
+      <!-- STEP 1 -->
+
+
+      <div class="sektion"><h3>STUFE 1</h3>  
+        <div class="inhalt">
+          
+
+          
+
+
+          <label for="prompt"><h1>Wie heisst du?</h1></label>
+          <input type="text" class="textarea small" id="name1" name="prompt" placeholder="Name..."><br>
+         <br>
+          <label for="prompt"><h1>Wer hat dich verletzt?</h1></label>
+          <input type="text" class="textarea small" id="name2" name="prompt" placeholder="Name..."><br>
+          <br>
+          
+          
+          
+          <label for="prompt"><h1>Wie ist eure Beziehung zueinander?</h1></label>
+          <input type="text" class="textarea small" id="relationship" name="prompt" placeholder="Freundin, Kollegin..."><br>
+          <br>
+          <label for="prompt"><h1>Was hat dich verletzt?</h1></label>
+		      <input type="text" class="textarea" id="neg_Story" name="prompt" placeholder="seine hässliche Vissage..."><br>
+          
+          <label id="errorText"></label><br><br>
+         </div>
+         <div class="background child1"> &nbsp; </div>
+      </div>
+      
+      
+      <!-- STEP 2 -->
+
+      <div class="sektion"><h3>STUFE 2</h3>
+        <div class="inhalt">
+
+          <h1>Tagebuch</h1>
+          <div id="output1" class="scroll-box diaryText" > 
+            <h2>Tagebuch eintrag wird geschrieben...</h2>
+            <br>
+            <iframe id="loading1" class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div> 
+        </div>
+        <div class="background child2"> &nbsp; </div>
+      </div>
+      
+
+       <!-- STEP 3 -->
+     
+
+      <div class="sektion"><h3>STUFE 3</h3>
+        <div class="inhalt">
+          <label ><h1>Nun denke an zwei Objekte, die du negativ mit <span id="nameText"></span> verbindest.</h1></label><br>
+		      <label for="prompt"><h1>Objekt 1</h1></label>
+		      <input type="text" id="neg_Obj_1" name="prompt" class="textarea small" placeholder="Tasse..."><br>
+		      <br>
+          <label for="prompt"><h1>Warum?</h1></label>
+		      <input type="text" id="neg_Obj_1_Story" name="prompt" class="textarea" placeholder="hat mich damit beworfen..."><br>
+        </div>
+        <div class="background child3"> &nbsp; </div>
+      </div>
+      <!--  -->
+
+        <!-- STEP 4 -->
+
+
+      <div class="sektion"><h3>STUFE 4</h3>
+        <div class="inhalt">
+
+          <div style="display: flex-box;"><img id="img_Obj_1" class="Bild" src="" alt=""></div>
+
+          <h1>Tagebuch</h1>
+          <div id="output2" class="scroll-box diaryText"> 
+            <h2> Tagebuch eintrag wird generiert... bitte warten :)</h2>
+            <iframe id="loading2" class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div> 
+          
+        </div>
+        <div class="background child4"> &nbsp; </div>
+      </div>
+
+
+       <!-- STEP 5 -->
+
+      
+      <div class="sektion"><h3>STUFE 5</h3>
+        <div class="inhalt">
+
+          <label ><h1>Nun denke an zwei Objekte, die du negativ mit <span id="nameText"></span> verbindest.</h1></label><br><br>
+		      <label for="prompt"><h1>Objekt 2</h1></label>
+		      <input type="text" id="neg_Obj_2" name="prompt" class="textarea small" placeholder="Tasse..."><br><br>
+		      <label for="prompt"><h1>Warum?</h1></label>
+		      <input type="text" id="neg_Obj_2_Story" name="prompt" class="textarea" placeholder="hat mich damit beworfen..."><br><br>
+
+        </div>
+        <div class="background child5"> &nbsp; </div>
+      </div>
+
+
+      <!-- STEP 6 -->
+      
+
+      <div class="sektion"><h3>STUFE 6</h3>
+        <div class="inhalt">
+
+          <div style="display: flex-box;"><img id="img_Obj_1" class="Bild" src="" alt=""></div>
+          <div style="display: flex-box;"><img id="img_Obj_2" class="Bild" src="" alt=""></div>
+          <div id="output3" class="scroll-box diaryText"> 
+            <h2> Tagebuch eintrag wird generiert... bitte warten :)</h2>
+            <iframe id="loading3" class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div> 
+        </div>
+        <div class="background child6"> &nbsp; </div>
+      </div>
+    
+
+      <!-- STEP 7 -->
+      
+
+      <div class="sektion"><h3>STUFE 7</h3>
+        <div class="inhalt">
+          
+          <label ><h1>Nun denke an zwei Objekte, die du positiv mit <span id="nameText"></span> verbindest.</h1></label><br><br>
+          <label for="prompt"><h1>Objekt 1</h1></label>
+          <input type="text" id="pos_Obj_1" name="prompt"  class="textarea small" placeholder="Teddy..."><br><br>
+          <label for="prompt"><h1>Warum?</h1></label>
+          <input type="text" id="pos_Obj_1_Story" name="prompt" class="textarea" placeholder="Geburtstagsgeschenk..."><br><br>
+
+        </div>
+        <div class="background child7"> &nbsp; </div>
+      </div>
+      
+
+       <!-- STEP 8 -->
+
+
+      <div class="sektion"><h3>STUFE 8</h3>
+        <div class="inhalt">
+
+          <div style="display: flex-box;"><img id="img_Obj_1" class="Bild" src="" alt=""></div>
+          <div style="display: flex-box;"><img id="img_Obj_2" class="Bild" src="" alt=""></div>
+          <div id="output4" class="scroll-box diaryText"> 
+            <h2> Tagebuch eintrag wird generiert... bitte warten :)</h2>
+            <iframe id="loading4"  class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div> 
+        </div>
+        <div class="background child8"> &nbsp; </div>
+      </div>
+     
+
+      <!-- STEP 9 -->
+      
+
+      <div class="sektion"><h3>STUFE 9</h3>
+        <div class="inhalt">
+
+          <label ><h1>Nun denke an zwei Objekte, die du positiv mit <span id="nameText"></span> verbindest.</h1></label><br><br>
+          <label for="prompt"><h1>Objekt 1</h1></label>
+          <input type="text" id="pos_Obj_2" name="prompt"  class="textarea small" placeholder="Teddy..."><br><br>
+          <label for="prompt"><h1>Warum?</h1></label>
+          <input type="text" id="pos_Obj_2_Story" name="prompt" class="textarea" placeholder="Geburtstagsgeschenk..."><br><br>
+
+        </div>
+        <div class="background child9"> &nbsp; </div>
+      </div>
+      
+
+      <!-- STEP 10 -->
+      
+
+      <div class="sektion"><h3>STUFE 10</h3>
+        <div class="inhalt">
+
+          <div style="display: flex-box;"><img id="img_Obj_1" class="Bild" src="" alt=""></div>
+          <div style="display: flex-box;"><img id="img_Obj_2" class="Bild" src="" alt=""></div>
+
+          <div id="output5" class="scroll-box diaryText"> 
+            <h2> Tagebuch eintrag wird generiert... bitte warten :)</h2>
+            <iframe id="loading5" class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div> 
+
+
+        </div>
+        <div class="background child10"> &nbsp; </div>
+      </div>
+     
+
+
+      <!-- STEP 11 -->
+      
+
+      <div class="sektion"><h3>STUFE 11</h3> 
+        <div class="inhalt">
+
+
+          <div style="display: flex-box;"><img id="img_Obj_1" class="Bild" src="" alt=""></div>
+          <div style="display: flex-box;"><img id="img_Obj_2" class="Bild" src="" alt=""></div>
+
+          <h1>Finales Tagebuch</h1>
+          <div class="scroll-box">
+            <div id="output11" class="scroll-box diaryText"> 
+              <h2> Tagebuch eintrag wird generiert... bitte warten :)</h2>
+              <iframe id="loading6" class="loading" src="https://embed.lottiefiles.com/animation/81550"></iframe>
+          </div>
+          <div class="background child11"> &nbsp; </div>
+      </div>
+    </div>
+  </body>
+</html>
